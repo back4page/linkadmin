@@ -31,15 +31,6 @@ export default function Home() {
         </span>
         <h1 className="text-2xl font-bold text-custom-gray2">Dashboard</h1>
       </div>
-      <a href="https://www.back4page.com" target="_blank" rel="noreferrer">
-        <div className="mt-7 bg-cyan-700 px-5 py-3 text-white font-semibold">
-          <Marquee gradient={false} speed={150}>
-            <span className="mr-20 md:mr-0">
-              Need more traffic? visit back4page.com
-            </span>
-          </Marquee>
-        </div>
-      </a>
 
       {session && fetchedData?.data?.status !== true && !isLoading && (
         <div className="mt-2 bg-red-700 px-5 py-3 text-white font-semibold">
