@@ -36,7 +36,7 @@ function useLogin() {
   //   }
   // };
 
-  const loginUser = async (values, formik) => {
+  const loginUser = async (values) => {
     const res = await signIn("credentials", {
       ...values,
       callbackUrl: `${window.location.origin}`,
@@ -59,10 +59,18 @@ function useLogin() {
     //   ...values,
     //   callbackUrl: `${window.location.origin}`,
     //   redirect: false,
-    // }).then(({ ok, error }) => {
-    //   // console.log(data);
-    //   ok && router.reload();
-    //   error && toast.error("Something went wrong");
+    // }).then((callback) => {
+    //   console.log(callback);
+
+    //   if (callback?.ok) {
+    //     console.log(callback);
+    //     // router.reload();
+    //     router.push("/");
+    //   }
+
+    //   if (callback?.error) {
+    //     toast.error("Something went wrong");
+    //   }
     // });
   };
 

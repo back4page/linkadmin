@@ -25,11 +25,6 @@ export const dashboardLinks = [
     icon: <FaEnvelope />,
   },
   {
-    name: "Cash App",
-    link: "/cash-app",
-    icon: <FaEnvelope />,
-  },
-  {
     name: "Posters",
     link: "/posters",
     icon: <FaUsers />,
