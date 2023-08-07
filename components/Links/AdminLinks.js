@@ -12,7 +12,7 @@ function AdminLinks({ id, admin }) {
   // const { id, username, admin, adminId } = session ? session.user : "";
 
   const { data: fetchedData, isLoading } = useGetData(
-    `/link/get/${id}/${admin}`
+    `/link/get/all/hello/world/com/data/${id}/${admin}`
   );
 
   const allSites = fetchedData?.data?.sites;

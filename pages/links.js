@@ -11,15 +11,16 @@ import useGetData from "../hooks/useGetData";
 function LinksPage() {
   const { data: session } = useSession();
   const { id, admin } = session ? session.user : "";
-  console.log("id", id);
+  // console.log("id", id);
 
-  const { data: fetchedData, isLoading } = useGetData(
-    `/link/get/all/${id}/${admin}`
-  );
-  console.log("links", fetchedData);
+  // const { data: fetchedData, isLoading } = useGetData(
+  //   // `/link/get/all/${id}/${admin}`
+  //   `/link/get/all/hello/world/com/data/${id}/${admin}`
+  // );
+  // console.log("links", fetchedData);
 
-  const allSites = fetchedData?.data?.sites;
-  const activeSites = fetchedData?.data?.data;
+  // const allSites = fetchedData?.data?.sites;
+  // const activeSites = fetchedData?.data?.data;
 
   // const x = allSites?.map((site) => site.name);
   // const y = activeSites?.map((site) => site);
@@ -37,20 +38,20 @@ function LinksPage() {
 
   // console.log(status());
 
-  const linksData = allSites?.map((site) => {
-    const checkStatus = () => {
-      if (activeSites?.includes(site.name)) {
-        return "Active";
-      } else {
-        return "Inactive";
-      }
-    };
+  // const linksData = allSites?.map((site) => {
+  //   const checkStatus = () => {
+  //     if (activeSites?.includes(site.name)) {
+  //       return "Active";
+  //     } else {
+  //       return "Inactive";
+  //     }
+  //   };
 
-    return {
-      site: site.name,
-      status: checkStatus(),
-    };
-  });
+  //   return {
+  //     site: site.name,
+  //     status: checkStatus(),
+  //   };
+  // });
 
   // const checkStatus = (site) => {
   //   if (activeSites?.includes(site.name)) {
