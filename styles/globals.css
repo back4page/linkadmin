@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply p-0 m-0 box-border font-Montserrat bg-slate-100;
+    @apply p-0 m-0 box-border font-Montserrat bg-[#F0FFFA];
   }
 
   /* chrome */

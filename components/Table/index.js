@@ -116,7 +116,7 @@ function Table({ columnsHeading, usersData }) {
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
       <div className="flex flex-col items-stretch overflow-x-auto">
         <table {...getTableProps()} className="table-auto text-xs lg:text-base">
-          <thead className="bg-custom-blue3">
+          <thead className="bg-white">
             {headerGroups.map((headerGroup, i) => (
               <tr key={i} {...headerGroup.getHeaderGroupProps()}>
                 {headerGroup.headers.map((column, i) => (
@@ -166,7 +166,7 @@ function Table({ columnsHeading, usersData }) {
                 <tr
                   key={i}
                   {...row.getRowProps()}
-                  className={`hover:shadow transition duration-200 ${
+                  className={`odd:bg-gray-50 ${
                     active === i && "shadow bg-slate-100"
                   }`}
                 >

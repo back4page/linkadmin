@@ -15,20 +15,20 @@ function Header({ admin, username, showMenu, setShowMenu }) {
   return (
     <div className="sticky top-0 z-20">
       <div className="relative z-20">
-        <div className="bg-white h-[68px] w-full flex justify-between lg:justify-end items-center shadow-md  px-7 z-30">
+        <div className="bg-[#3A8CBC] h-[68px] w-full flex justify-between lg:justify-end items-center shadow-md  px-7 z-30">
           <div
-            className="text-custom-blue2 lg:hidden"
+            className="text-white lg:hidden"
             onClick={() => setShowMenu(!showMenu)}
           >
             <FaBars size={20} />
           </div>
 
-          <div className="text-xl text-custom-blue4 font-bold lg:hidden">
+          <div className="text-xl text-white font-bold lg:hidden">
             Link Admin
           </div>
 
           <div className="flex justify-between items-center gap-5 lg:gap-[80px]">
-            <div className="hidden lg:flex justify-between items-center gap-12 text-custom-gray2 text-base font-semibold">
+            <div className="hidden lg:flex justify-between items-center gap-12 text-white text-base font-semibold">
               <p className="">Username: {username}</p>
               <p className="">Role : {admin ? "Admin" : "Poster"}</p>
             </div>
@@ -43,7 +43,7 @@ function Header({ admin, username, showMenu, setShowMenu }) {
           </div>
 
           <div
-            className="lg:hidden text-custom-blue2 p-1 rounded-full border-2 border-custom-blue2"
+            className="lg:hidden text-white p-1 rounded-full border-2 border-custom-blue2"
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? <FaAngleUp size={20} /> : <FaAngleDown size={20} />}

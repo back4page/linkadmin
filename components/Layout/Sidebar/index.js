@@ -16,13 +16,13 @@ function Sidebar({ showMenu, setShowMenu, node, name, navLinks }) {
   const activeClass = (path) => {
     // router.pathname === path
     if (router.pathname === path) {
-      return "bg-custom-blue5 text-white";
+      return "bg-gray-600 text-white rounded-md";
     }
     // if (router.pathname.includes(path)) {
     //   return "bg-custom-blue5 text-white";
     // }
 
-    return "text-custom-blue2 hover:text-white hover:bg-custom-blue5";
+    return "text-gray-400 hover:text-white hover:bg-gray-700 rounded-md";
   };
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function Sidebar({ showMenu, setShowMenu, node, name, navLinks }) {
     >
       <div
         ref={node}
-        className={`h-screen overflow-y-auto bg-custom-blue z-30 top-0 bottom-0 fixed lg:sticky sidebar text-white lg:translate-x-0 w-[264px] ease-out duration-300 ${
+        className={`h-screen overflow-y-auto bg-[#212E34] z-30 top-0 bottom-0 fixed lg:sticky sidebar text-white lg:translate-x-0 w-[264px] ease-out duration-300 ${
           showMenu ? "translate-x-0" : "-translate-x-full"
         }
       `}
