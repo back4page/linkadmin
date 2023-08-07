@@ -12,11 +12,9 @@ import useGetData from "../hooks/useGetData";
 
 function ClicksPage() {
   const { data } = useSession();
-  const id = data?.user?.id;
   const admin = data?.user?.admin;
   const adminId = data?.user?.adminId;
   const posterId = data?.user?.posterId;
-  // console.log("poster session", id);
 
   const route = admin ? `/${adminId}` : `/${adminId}/${posterId}`;
 
