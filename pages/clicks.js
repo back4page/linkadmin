@@ -19,6 +19,8 @@ function ClicksPage() {
 
   const clicksData = fetchedData?.data?.click;
 
+  console.log("clicksData", clicksData);
+
   return (
     <div className="relative">
       <div className="flex items-center gap-3">

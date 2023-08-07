@@ -14,7 +14,7 @@ function LinksPage() {
   console.log("id", id);
 
   const { data: fetchedData, isLoading } = useGetData(
-    `/link/get/${id}/${admin}`
+    `/link/get/all/${id}/${admin}`
   );
   console.log("links", fetchedData);
 
